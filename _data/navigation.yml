@@ -1,0 +1,19 @@
+main:
+  - title: About
+    url: /about/
+  - title: Portfolio
+    url: /portfolio/
+    children:
+      - title: Companies
+        url: /portfolio/
+      - title: White Label Security
+        url: /portfolio/white-label-security/
+      - title: Bugcrowd
+        url: /portfolio/bugcrowd/
+      - title: The Disclose.io Project
+        url: /portfolio/disclose-io/
+      - divider: true
+      - title: Investing and Advisory
+        url: /advisory/
+  - title: Contact
+    url: /contact/

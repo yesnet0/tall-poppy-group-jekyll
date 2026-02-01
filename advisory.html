@@ -1,0 +1,30 @@
+---
+layout: default
+title: Investing and Advisory
+permalink: /advisory/
+---
+<div class="container page-container">
+  <h1 class="page-title">Investing and Advisory</h1>
+
+  <p class="page-intro">
+    Tall Poppy Group provides investment capital and strategic advisory services to a select group of innovative
+    cybersecurity companies. We partner with founders who are building the next generation of security solutions.
+  </p>
+
+  <div class="portfolio-grid">
+    {% for item in site.data.advisory %}
+    <div class="portfolio-card">
+      <a href="{{ item.website }}" target="_blank" rel="noopener noreferrer" class="portfolio-card-image portfolio-card-link">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy">
+        <span class="external-link-icon">{% include icons/external-link.svg %}</span>
+      </a>
+      <div class="portfolio-card-content">
+        <h3>{{ item.name }}</h3>
+        {% if item.description != "" %}
+        <p>{{ item.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

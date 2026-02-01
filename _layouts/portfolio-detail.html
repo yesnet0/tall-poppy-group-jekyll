@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% assign company = site.data.companies | where: "id", page.company_id | first %}
+
+<div class="container portfolio-detail">
+  <div class="back-link">
+    <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-ghost">
+      {% include icons/arrow-left.svg %} Back to Companies
+    </a>
+  </div>
+
+  <div class="portfolio-logo-container">
+    <img src="{{ company.image | relative_url }}" alt="{{ company.name }}" class="portfolio-logo">
+  </div>
+
+  <h1 class="portfolio-title">{{ company.name }}</h1>
+
+  <div class="portfolio-content prose">
+    <div class="portfolio-meta">
+      {% include icons/calendar.svg %}
+      <span>Founded in {{ company.founded }}</span>
+    </div>
+
+    <p class="portfolio-tagline">{{ company.tagline }}</p>
+
+    <h2>About {{ company.name }}</h2>
+    {{ company.about | markdownify }}
+
+    <h2>Key Solutions</h2>
+    <ul class="solutions-list">
+      {% for solution in company.solutions %}
+      <li>{{ solution }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Impact</h2>
+    {{ company.impact | markdownify }}
+
+    <div class="portfolio-cta">
+      <a href="{{ company.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Visit {{ company.name }}
+      </a>
+    </div>
+  </div>
+</div>

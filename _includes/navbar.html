@@ -1,0 +1,56 @@
+<header class="navbar">
+  <div class="container navbar-container">
+    <div class="navbar-brand">
+      <a href="{{ '/' | relative_url }}" class="navbar-logo">
+        <img src="{{ '/assets/images/tallpoppygroup_square.png' | relative_url }}" alt="Tall Poppy Group" width="40" height="40">
+        <span>Tall Poppy Group</span>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      {% include icons/menu.svg %}
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="navbar-nav desktop-nav">
+      <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link dropdown-trigger">
+          Portfolio {% include icons/chevron-down.svg %}
+        </button>
+        <div class="dropdown-menu">
+          <a href="{{ '/portfolio/' | relative_url }}" class="dropdown-item">Companies</a>
+          {% for company in site.data.companies %}
+          <a href="{{ '/portfolio/' | append: company.id | append: '/' | relative_url }}" class="dropdown-item dropdown-item-indent">{{ company.name }}</a>
+          {% endfor %}
+          <div class="dropdown-divider"></div>
+          <a href="{{ '/advisory/' | relative_url }}" class="dropdown-item">Investing and Advisory</a>
+        </div>
+      </div>
+
+      <a href="{{ '/contact/' | relative_url }}" class="nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+    <nav class="mobile-nav-content">
+      <a href="{{ '/about/' | relative_url }}" class="mobile-nav-link">About</a>
+
+      <div class="mobile-nav-section">
+        <span class="mobile-nav-heading">Portfolio</span>
+        <div class="mobile-nav-submenu">
+          <a href="{{ '/portfolio/' | relative_url }}" class="mobile-nav-sublink">Companies</a>
+          {% for company in site.data.companies %}
+          <a href="{{ '/portfolio/' | append: company.id | append: '/' | relative_url }}" class="mobile-nav-sublink mobile-nav-sublink-indent">{{ company.name }}</a>
+          {% endfor %}
+          <a href="{{ '/advisory/' | relative_url }}" class="mobile-nav-sublink">Investing and Advisory</a>
+        </div>
+      </div>
+
+      <a href="{{ '/contact/' | relative_url }}" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+</header>

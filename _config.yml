@@ -1,0 +1,41 @@
+# Site settings
+title: Tall Poppy Group
+tagline: Security | Technology | Policy | Startups
+description: Startup skunkworks at the edge of cybersecurity, threat intelligence, and research innovation.
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio-detail"
+
+# Exclude from build
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - src
+  - Gemfile
+  - Gemfile.lock
+  - README.md

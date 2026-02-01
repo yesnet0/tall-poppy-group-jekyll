@@ -1,0 +1,54 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Logo and Company Info -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="{{ '/assets/images/tallpoppygroup_square.png' | relative_url }}" alt="Tall Poppy Group" width="50" height="50">
+          <span>Tall Poppy Group</span>
+        </div>
+        <p class="footer-copyright">&copy; {{ 'now' | date: '%Y' }} Tall Poppy Group. All rights reserved.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li>
+            <span class="footer-link-label">Portfolio</span>
+            <ul class="footer-sublinks">
+              <li><a href="{{ '/portfolio/' | relative_url }}">Companies</a></li>
+              <li><a href="{{ '/advisory/' | relative_url }}">Investing and Advisory</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul class="footer-contact">
+          <li>
+            {% include icons/mail.svg %}
+            <a href="mailto:hello@tallpoppygroup.com">hello@tallpoppygroup.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="footer-social">
+          <a href="https://linkedin.com/company/tallpoppygroup" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            {% include icons/linkedin.svg %}
+          </a>
+          <a href="https://twitter.com/tallpoppygroup" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            {% include icons/twitter.svg %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

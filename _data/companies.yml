@@ -1,0 +1,52 @@
+- id: white-label-security
+  name: White Label Security
+  description: Secure more clients.
+  image: /assets/images/logos/white-label-security.png
+  website: https://whitelabelsecurity.com
+  founded: 2010
+  tagline: Secure more clients.
+  about: |
+    Founded in 2010, White Label Security pioneered the concept of resellable security services for managed service providers (MSPs) and IT consultancies. The company developed a platform that allowed technology service providers to offer professional-grade security assessments, compliance services, and vulnerability management under their own brand, enabling smaller firms to compete with larger security consultancies.
+  solutions:
+    - White-labeled security assessment reports and templates
+    - Compliance automation for PCI DSS, HIPAA, and other frameworks
+    - Vulnerability scanning and management services
+    - Security policy development tools
+    - Client-facing security dashboards and portals
+  impact: |
+    White Label Security transformed how small and mid-sized IT service providers delivered security services to their clients. By democratizing access to enterprise-grade security tools and methodologies, they enabled hundreds of service providers to add security offerings to their portfolios without significant investment in specialized expertise or infrastructure. This approach helped extend professional security services to thousands of small and medium businesses that previously had limited access to such resources.
+
+- id: bugcrowd
+  name: Bugcrowd
+  description: The pioneers of crowdsourced cybersecurity.
+  image: /assets/images/logos/bugcrowd.png
+  website: https://www.bugcrowd.com
+  founded: 2012
+  tagline: The pioneers of crowdsourced cybersecurity.
+  about: |
+    Bugcrowd is a pioneering crowdsourced security platform that connects organizations with a global community of security researchers. Through their platform, companies can harness the collective intelligence of thousands of ethical hackers to identify and remediate security vulnerabilities before they can be exploited by malicious actors.
+  solutions:
+    - Bug bounty programs that incentivize vulnerability discovery
+    - Vulnerability disclosure programs for responsible reporting
+    - Penetration testing as a service
+    - Attack surface management
+    - Security researcher talent pool and management
+  impact: |
+    Bugcrowd has revolutionized how organizations approach security testing by making it more accessible, efficient, and effective. Their platform has facilitated the discovery of tens of thousands of security vulnerabilities across industries, helping protect sensitive data and systems for businesses and their customers worldwide.
+
+- id: disclose-io
+  name: The Disclose.io Project
+  description: We're here to make vulnerability disclosure safe, simple, and standardized for everyone.
+  image: /assets/images/logos/disclose-io.png
+  website: https://disclose.io
+  founded: 2018
+  tagline: Making vulnerability disclosure safe, simple, and standardized for everyone.
+  about: |
+    The Disclose.io Project is a collaborative and vendor-agnostic initiative to standardize best practices around safe harbor for good-faith security research. The project helps create a healthy and sustainable relationship between security researchers and the organizations they're trying to help.
+  solutions:
+    - Standardized vulnerability disclosure policy templates
+    - Safe harbor clauses to protect security researchers
+    - Community-driven database of security contacts and programs
+    - Tools to help organizations implement secure disclosure practices
+  impact: |
+    The Disclose.io Project has helped thousands of organizations implement responsible disclosure programs, creating safer environments for security researchers to report vulnerabilities without fear of legal repercussions. The project continues to advocate for better security practices and clearer legal frameworks around security research.

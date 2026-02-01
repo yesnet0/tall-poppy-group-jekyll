@@ -1,0 +1,25 @@
+---
+layout: default
+title: Companies
+permalink: /portfolio/
+---
+<div class="container page-container">
+  <h1 class="page-title">Companies</h1>
+
+  <div class="portfolio-grid">
+    {% for company in site.data.companies %}
+    <div class="portfolio-card">
+      <div class="portfolio-card-image">
+        <img src="{{ company.image | relative_url }}" alt="{{ company.name }}" loading="lazy">
+      </div>
+      <div class="portfolio-card-content">
+        <h3>{{ company.name }}</h3>
+        <p>{{ company.description }}</p>
+        <a href="{{ company.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-red">
+          Visit site {% include icons/external-link.svg %}
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
